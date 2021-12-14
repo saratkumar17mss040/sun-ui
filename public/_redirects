@@ -1,0 +1,2 @@
+# Redirects any url requests to index.html page with http status code 200
+/* /index.html 200
