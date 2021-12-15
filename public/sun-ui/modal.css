@@ -1,0 +1,37 @@
+.modal-bg {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	z-index: var(--z-md);
+}
+
+.modal {
+	background-color: var(--white-100);
+}
+
+.modal-small {
+	width: 20rem;
+	height: 20rem;
+}
+
+.modal-large {
+    width: 50rem;
+	height: 50rem;
+}
+
+@media screen and (max-width: 720px) {
+	.modal-small {
+        width: 15rem;
+		height: 20rem;
+	}
+
+	.modal-large {
+        width: 20rem;
+		height: 30rem;
+	}
+}

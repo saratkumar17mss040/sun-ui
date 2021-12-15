@@ -1,0 +1,37 @@
+.badge-wrapper {
+	position: absolute;
+}
+
+.badge {
+	position: absolute;
+	top: -0.2em;
+	right: -0.25em;
+	border-radius: 50%;
+	font-size: 0.7rem;
+	font-weight: bold;
+	width: 1rem;
+	height: 1rem;
+	display: grid;
+	place-items: center;
+}
+
+.badge-avatar {
+	position: absolute;
+	bottom: 1rem;
+	left: 2.5rem;
+	width: 1rem;
+	height: 1rem;
+	border: 0.125rem solid var(--gray-200);
+}
+
+.badge-avatar-red {
+	background-color: var(--red-600);
+}
+
+.badge-avatar-green {
+	background-color: var(--green-500);
+}
+
+.badge-avatar-grey {
+	background-color: var(--gray-300);
+}

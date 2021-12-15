@@ -1,0 +1,147 @@
+/**
+* Margin util classes
+*/
+
+.m-0 {
+	margin: 0;
+}
+
+.m-1 {
+	margin: var(--margin-1);
+}
+
+.m-2 {
+	margin: var(--margin-2);
+}
+
+.m-3 {
+	margin: var(--margin-3);
+}
+
+.m-4 {
+	margin: var(--margin-4);
+}
+
+.m-5 {
+	margin: var(--margin-5);
+}
+
+.m-6 {
+	margin: var(--margin-6);
+}
+
+.m-7 {
+	margin: var(--margin-7);
+}
+
+.m-8 {
+	margin: var(--margin-8);
+}
+
+/**
+* Margin horizontal
+*/
+
+.m-h-0 {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.m-h-1 {
+	margin-left: var(--margin-1);
+	margin-right: var(--margin-1);
+}
+
+.m-h-2 {
+	margin-left: var(--margin-2);
+	margin-right: var(--margin-2);
+}
+
+.m-h-3 {
+	margin-left: var(--margin-3);
+	margin-right: var(--margin-3);
+}
+
+.m-h-4 {
+	margin-left: var(--margin-4);
+	margin-right: var(--margin-4);
+}
+
+.m-h-5 {
+	margin-left: var(--margin-5);
+	margin-right: var(--margin-5);
+}
+
+.m-h-6 {
+	margin-left: var(--margin-6);
+	margin-right: var(--margin-6);
+}
+
+.m-h-7 {
+	margin-left: var(--margin-7);
+	margin-right: var(--margin-7);
+}
+
+.m-h-8 {
+	margin-left: var(--margin-8);
+	margin-right: var(--margin-8);
+}
+
+/**
+* Margin vertical
+*/
+
+.m-v-0 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.m-v-1 {
+	margin-top: var(--margin-1);
+	margin-bottom: var(--margin-1);
+}
+
+.m-v-2 {
+	margin-top: var(--margin-2);
+	margin-bottom: var(--margin-2);
+}
+
+.m-v-3 {
+	margin-top: var(--margin-3);
+	margin-bottom: var(--margin-3);
+}
+
+.m-v-4 {
+	margin-top: var(--margin-4);
+	margin-bottom: var(--margin-4);
+}
+
+.m-v-5 {
+	margin-top: var(--margin-5);
+	margin-bottom: var(--margin-5);
+}
+
+.m-v-6 {
+	margin-top: var(--margin-6);
+	margin-bottom: var(--margin-6);
+}
+
+.m-v-7 {
+	margin-top: var(--margin-7);
+	margin-bottom: var(--margin-7);
+}
+
+.m-v-8 {
+	margin-top: var(--margin-8);
+	margin-bottom: var(--margin-8);
+}
+
+.m-h-auto {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.m-v-auto {
+	margin-top: auto;
+	margin-bottom: auto;
+}

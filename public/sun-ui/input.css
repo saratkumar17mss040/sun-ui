@@ -1,0 +1,19 @@
+.textbox {
+	resize: none;
+}
+
+.textbox-horizontal-resize {
+	resize: horizontal;
+}
+
+.textbox-vertical-resize {
+	resize: vertical;
+}
+
+.textbox-horizontal-vertical-resize {
+	resize: both;
+}
+
+.input-label {
+	display: block;
+}

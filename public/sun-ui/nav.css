@@ -1,0 +1,35 @@
+.toggle {
+	display: none;
+	top: 3.125rem;
+}
+
+.toggler:focus ~ .toggle {
+	display: flex;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: var(--white-100);
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: var(--z-sm);
+}
+
+.dropdown-content a {
+	color: var(--slate-900);
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: var(--white-100);
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: var(--green-500);
+}
