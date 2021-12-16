@@ -28,19 +28,19 @@
 	padding: var(--padding-4);
 }
 
-.h-1 {
+.hd-1 {
 	font-weight: bold;
 	font-size: var(--font-8);
 	margin: var(--margin-2) 0;
 }
 
-.h-2 {
+.hd-2 {
 	font-weight: 600;
 	font-size: var(--font-6);
 	margin: var(--margin-2) 0;
 }
 
-.h-3 {
+.hd-3 {
 	font-weight: bold;
 	font-size: var(--font-4);
 	margin: var(--margin-4);

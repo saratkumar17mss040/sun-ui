@@ -5,10 +5,11 @@
 	box-sizing: border-box;
 }
 
+/* 
 *::before,
 *::after {
 	box-sizing: border-box;
-}
+} */
 
 :root {
 	--gray-200: #e7e5e4;

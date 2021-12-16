@@ -1,0 +1,46 @@
+@import url(../node_modules/@fortawesome/fontawesome-free/css/all.min.css);
+
+.App {
+	padding-top: 3.5rem;
+	min-height: 100vh;
+}
+
+.wrapper {
+	padding: 1rem 0.75rem;
+}
+
+.preview {
+	max-width: 15.625rem;
+}
+
+.shade {
+	background-color: rgb(235, 235, 235);
+	opacity: 0.1;
+}
+
+/* Desktop */
+
+@media screen and (min-width: 721px) {
+    
+	.App {
+		display: grid;
+		grid-template-columns: 1fr 3.5fr;
+	}
+
+	.wrapper {
+		margin-top: 1rem;
+		display: flex;
+		justify-content: center;
+		height: max-content;
+		padding: 1rem 5vw;
+	}
+
+	.shade {
+		background-color: inherit;
+		opacity: 1;
+	}
+
+	.preview {
+		max-width: 40rem;
+	}
+}
