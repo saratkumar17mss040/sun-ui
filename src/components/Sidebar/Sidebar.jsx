@@ -7,6 +7,11 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 	const ref = useRef();
 	useOnClickOutside(ref, () => setShowSideBar(false));
 
+	const applyActiveLinkStyleIfActive = ({ isActive }) => {
+		// Active state is something that is provided by react-router-dom
+		return `${styles.side} ` + (isActive ? `${styles.link__active}` : '');
+	};
+
 	return (
 		<div
 			ref={ref}
@@ -16,24 +21,14 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 		>
 			<ul className={`${styles.ul} list`}>
 				<NavLink
-					className={(isActive) => {
-						console.log(isActive);
-						return (
-							`${styles.side}` + (!isActive ? '' : `${styles.link__active}`)
-						);
-					}}
+					className={applyActiveLinkStyleIfActive}
 					to="/home"
 					onClick={() => setShowSideBar(false)}
 				>
 					Getting Started
 				</NavLink>
 				<NavLink
-					className={(isActive) => {
-						console.log(isActive);
-						return (
-							`${styles.side}` + (!isActive ? '' : `${styles.link__active}`)
-						);
-					}}
+					className={applyActiveLinkStyleIfActive}
 					to="/avatar"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -41,7 +36,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/badge"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -49,7 +44,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/banners"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -57,7 +52,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/button"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -65,7 +60,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/cards"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -73,7 +68,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/image"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -81,7 +76,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/input"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -89,7 +84,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/list"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -97,7 +92,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/modal"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -105,7 +100,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/navigation"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -113,7 +108,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/text-utils"
 					onClick={() => setShowSideBar(false)}
 				>
@@ -121,7 +116,7 @@ export const Sidebar = ({ setShowSideBar, showSideBar }) => {
 				</NavLink>
 
 				<NavLink
-					className={styles.side}
+					className={applyActiveLinkStyleIfActive}
 					to="/toast"
 					onClick={() => setShowSideBar(false)}
 				>

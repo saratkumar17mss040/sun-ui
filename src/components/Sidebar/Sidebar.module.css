@@ -49,10 +49,9 @@
 
 .link__active {
 	border-bottom: 5px solid var(--gray-800);
-	color: var(--gray-800) !important;
-	cursor: pointer;
-	text-decoration: none !important;
 }
+
+/* min of 720px or more than that - Screen sizes */
 
 @media screen and (min-width: 720px) {
 	.container {

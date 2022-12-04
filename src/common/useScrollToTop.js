@@ -2,6 +2,10 @@ import { useEffect } from 'react';
 
 export const useScrollToTop = () => {
 	useEffect(() => {
-		window.scrollTo(0, 0);
+		console.log('scroll');
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth',
+		});
 	}, []);
 };

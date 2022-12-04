@@ -20,8 +20,8 @@
 }
 
 .modal-large {
-    width: 50rem;
-	height: 50rem;
+    width: 30rem;
+	height: 30rem;
 }
 
 @media screen and (max-width: 720px) {

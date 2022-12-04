@@ -3,10 +3,10 @@ import { SunLogo } from './SunLogo';
 import { LinkedInLogo } from './LinkedInLogo';
 import { TwitterLogo } from './TwitterLogo';
 import { GithubLogo } from './GithubLogo';
+import { NavLink } from 'react-router-dom';
 import { useEffect } from 'react';
 
 export const Navbar = ({ setShowSideBar, showSideBar }) => {
-
 	useEffect(() => {
 		setShowSideBar(true);
 		setTimeout(() => {
@@ -24,27 +24,38 @@ export const Navbar = ({ setShowSideBar, showSideBar }) => {
 				>
 					<SunLogo showSideBar={showSideBar} />
 				</div>
-				<header className="color-gray-1 hd-2 m-h-2 m-l-4">Sun-UI</header>
+				<header className="color-gray-1 hd-2 m-h-2 m-l-4">
+					<NavLink to="/home" className="color-white">
+						Sun-UI
+					</NavLink>
+				</header>
 			</div>
 
 			<div className="flex m-h-2 space-around align-center p-2">
 				<div
 					className="p-h-2 flex align-center cur-point"
 					onClick={() => {
-						window.open('', '_blank');
+						window.open('https://github.com/saratkumar17mss040', '_blank');
 					}}
 				>
 					<GithubLogo />
 				</div>
 				<div
 					className="p-h-2 flex align-center cur-point"
-					onClick={() => window.open('', '_blank')}
+					onClick={() =>
+						window.open('https://twitter.com/sarath6110', '_blank')
+					}
 				>
 					<TwitterLogo />
 				</div>
 				<div
 					className="p-h-2 flex align-center cur-point"
-					onClick={() => window.open('', '_blank')}
+					onClick={() =>
+						window.open(
+							'https://www.linkedin.com/in/sarath-kumar-216b031b5',
+							'_blank'
+						)
+					}
 				>
 					<LinkedInLogo />
 				</div>
