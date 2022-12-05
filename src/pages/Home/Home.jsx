@@ -12,9 +12,7 @@ export const Home = () => {
 				<div className={styles.logo__wrapper}>
 					<Logo />
 				</div>
-				<div className="m-h-2">
-					Sun-UI
-				</div>
+				<div className="m-h-2">Sun-UI</div>
 			</div>
 			<div className="text-bold font-2 m-h-4 m-v-2">
 				A dead simple, CSS component library.
@@ -31,8 +29,7 @@ export const Home = () => {
 			<div className="flex align-center m-v-8">
 				<embed
 					className="w-100 h-4"
-					src="https://carbon.now.sh/embed/CS6Jz7E4SwCunkwkbkHG"
-					type=""
+					src="https://carbon.now.sh/embed/gjPnV3sf4vxqRT4RdutF"
 				/>
 			</div>
 			<div className="para-normal">Made with code💻by Sarathkumar.</div>
