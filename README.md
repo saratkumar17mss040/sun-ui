@@ -1,3 +1,3 @@
 # sun-ui
 
-A dead simple, CSS component library.
+A dead simple, CSS UI library.
